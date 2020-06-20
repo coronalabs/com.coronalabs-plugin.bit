@@ -1,0 +1,15 @@
+
+---
+
+2013/5/15:
+
+	This repo was last updated on 2013/5/15 with:
+
+		LuaBitOp-1.0.2
+
+	From:
+
+		http://bitop.luajit.org
+		http://bitop.luajit.org/download.html
+
+---
