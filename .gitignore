@@ -1,1 +1,2 @@
 plugins/*.tgz
+src/mac/plugin_bit.dylib
