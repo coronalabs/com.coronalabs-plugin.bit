@@ -15,9 +15,6 @@ LOCAL_SRC_FILES := ../corona-libs/jni/$(TARGET_ARCH_ABI)/liblua.so
 LOCAL_EXPORT_C_INCLUDES := $(LUA_API_DIR)
 include $(PREBUILT_SHARED_LIBRARY)
 
-LOCAL_LDFLAGS += "-Wl,-z,max-page-size=16384"
-LOCAL_LDFLAGS += "-Wl,-z,common-page-size=16384"
-
 # -----------------------------------------------------------------------------
 
 include $(CLEAR_VARS)
@@ -37,6 +34,9 @@ LOCAL_CFLAGS := \
 	-DRtt_ANDROID_ENV
 
 LOCAL_LDLIBS := -llog
+
+LOCAL_LDFLAGS += -Wl,-z,max-page-size=16384
+LOCAL_LDFLAGS += -Wl,-z,common-page-size=16384
 
 LOCAL_SHARED_LIBRARIES := \
 	liblua
